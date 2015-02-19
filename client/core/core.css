@@ -1,0 +1,97 @@
+.vcenter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.block {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin-left: 50vw;
+	margin-top: 50vh;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: rgba(0,0,0,0.5);
+	text-decoration: none;
+}
+
+.vcenter-block {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin-left: 50vw;
+	margin-top: 50vh;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.block-minimal {
+	background: rgba(0,0,0,0.5);
+}
+
+.block-padding {
+	padding: 1.5em;
+}
+.hblock-padding {
+	padding: 3em;
+
+}
+
+.hblock:hover {
+	background: rgba(100,100,100,0.5);
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.jumboheader {
+	font-size: 10rem;
+	font-weight: 100;
+}
+
+a {
+	cursor: pointer;
+}
+
+.doc {
+	height: 25vh;
+	overflow: auto;
+}
+
+.box {
+	border: 1px solid white;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin-right: 1em;
+}
+
+.topright {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	margin: auto;
+}
+
+.nodec {
+	text-decoration: none;
+}
+
+.icon-normalize {
+	font-size: 2em;
+	color: white;
+}
+
+.indented p {
+	text-indent: 2em;
+}
+
+.gianticon {
+	font-size: 12em;
+}
+
+.absolute {
+	position: absolute;
+}

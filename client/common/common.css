@@ -1,0 +1,16 @@
+.fullscreen {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.pullbottomright {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.tubular-pause, .tubular-play {
+	cursor: pointer;
+}
