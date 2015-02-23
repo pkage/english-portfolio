@@ -7,7 +7,7 @@
 meteor-platform
 autopublish
 insecure
-halil:materialize
 maazalik:malihu-jquery-custom-scrollbar
 clode:transit
 awatson1978:browser-detection
+materialize:materialize
