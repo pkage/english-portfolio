@@ -58,3 +58,10 @@ Template.menu.events({
 		$('#menup1').slideDown();
 	}
 });
+
+Template.hintbox.events({
+	'click .hintbox': function() {
+		$("#hintbox-modal").openModal();
+		
+	}
+})

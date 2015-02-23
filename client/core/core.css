@@ -89,9 +89,30 @@ a {
 }
 
 .gianticon {
-	font-size: 12em;
+	font-size: 7em;
 }
 
 .absolute {
 	position: absolute;
+}
+
+.hintbox {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	height: 6em;
+	padding-left: .5em;
+	margin: auto;
+}
+
+.fullbounder {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.shrinkmargins {
+	margin-top: -1em;
+	margin-bottom: -1em;
 }

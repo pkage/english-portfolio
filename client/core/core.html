@@ -76,6 +76,8 @@
 
 	</div>
 </div>
+
+{{> hintbox text="In this collection of short writing assignments, you can see the progression in writing style from the beginning of the term to the end. I become more fluent in my writing and make fewer grammatical mistakes" name="winter journal"}}
 </template>
 
 <template name="dsonessay">
@@ -139,6 +141,8 @@
 		<p>There are some (albeit few) similarities between computer programming and Dickinson’s poetry, however, the differences far outnumber the similarities. Poems rarely control robots and drive cars, while programming does both. On the other hand, poems can control people.</p>
 	</div>
 </div>
+
+{{> hintbox name="similar essay" text="This essay was written towards the beginnng half of this term. As you can see, there are some errors (mostly stylistic in nature), but the content itself contains \"flashes of excellence\" (according to you)."}}
 </template>
 
 <template name="intro">
@@ -168,6 +172,8 @@
 		<p>	In conclusion, the fiction that we read often has a basis in reality. Whether the author derives inspiration from real events or real places, the outcome is a work of fiction that can often have a large effect on our lives.</p>
 	</div>
 </div>
+
+{{> hintbox name="fiction essay" text="This essay, while not my strongest work grammar-wise, contains an interesting and informative narrative about the factual origins of fiction. It also exhibits my distaste for conservative scare-mongering media, so if that's your cup of tea then this has got you covered."}}
 </template>
 
 <template name="infog">
@@ -177,6 +183,9 @@
 		<img src="https://pbs.twimg.com/media/B8-8AaeIAAEHDnQ.png" style="width:100%;">
 	</div>
 </div>
+
+{{> hintbox name="realism infographic" text="This infographic, produced late in the term, shows a siginificant improvement over the previous infographic (not included in this portfolio). It contains relevant and interesting information about realism, and garnered some attention on twitter when I tweeted about it."}}
+
 </template>
 
 <template name="menuiconbtn">
@@ -185,7 +194,7 @@
 		<div class="white-text">
 			<center>
 				<i class="gianticon {{icon}}"></i>
-				<p class="flow-text" style="margin-top: -2em;">{{text}}</p><br>
+				<p class="shrinkmargins">{{text}}</p><br>
 			</center>
 		</div>
 	</div>
@@ -199,6 +208,36 @@
 		<img src="http://i.imgur.com/PTrDM52.png" style="width:100%;">
 	</div>
 </div>
+
+{{> hintbox name="thoreau project" text="Created early in the term, this project was intended to display a quote from Henry David Thoreau in an original manner. Achieved with Photoshop."}}
+</template>
+
+<template name="twitter">
+	<div class="vcenter-block white-text">
+		{{> menubtn}}
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block-minimal block-padding">
+					<a href="http://nyti.ms/1BflRHS" target="_blank">nyti.ms/1BflRHS</a> sad that this is a social norm now. All lives matter. #en3a
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block-minimal block-padding">
+					Nathaniel Hawthorne's "The Black Veil" really gets you thinking about #socialanxiety and group behavior.
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block-minimal block-padding">
+					Aminadab from Nathaniel Hawthorne's "The Birthmark" reminds me a lot of this guy. #en3a @ShortStoryWeek @Storyful<br><i>not pictured: igor from young frankenstein</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{> hintbox name="selected tweets" text="Each of these three tweets exhibit traits of effective tweets. They target active hashtags, twitter vips, and include images for maximum impact."}}
 </template>
 
 <template name="menu">
@@ -212,7 +251,7 @@
 		<div class="row" style="width: 50vw">
 			{{> menuiconbtn icon="mdi-action-book" text="fiction essay" href="fessay"}}
 			{{> menuiconbtn icon="mdi-image-photo" text="infographic" href="infog"}}
-			{{> menuiconbtn icon="mdi-communication-chat" text="twitter" href="menu" external="https://twitter.com/patrick_kage"}}
+			{{> menuiconbtn icon="mdi-communication-chat" text="twitter" href="twitter"}}
 		</div>
 		<div class="row">
 			{{> menuiconbtn icon="mdi-navigation-arrow-back" text="back" href="home"}}
@@ -222,7 +261,7 @@
 					<div class="white-text">
 						<center>
 							<i class="gianticon mdi-navigation-arrow-forward"></i>
-							<p class="flow-text" style="margin-top: -2em;">next page</p><br>
+							<p class="shrinkmargins">next page</p><br>
 						</center>
 					</div>
 				</div>
@@ -246,15 +285,32 @@
 					<div class="white-text">
 						<center>
 							<i class="gianticon mdi-navigation-arrow-back"></i>
-							<p class="flow-text" style="margin-top: -2em;">previous page</p><br>
+							<p class="shrinkmargins">previous page</p><br>
 						</center>
 					</div>
 				</div>
 			</a>
 			{{> menuiconbtn icon="mdi-communication-email" text="email me" external="mailto:pkage16@choate.edu" href="menu"}}
 			{{> menuiconbtn icon="mdi-hardware-computer" text="source" external="http://github.com/quadnix/english-portfolio" href="menu"}}
-			
+
 		</div>
 	</div>
 </div>
+</template>
+
+<template name="hintbox">
+	<div class="hintbox hblock block-minimal">
+		<i class="medium white-text mdi-action-info-outline"></i>
+
+	</div>
+	<div id="hintbox-modal" class="modal">
+		<div class="modal-content">
+			<h4>{{name}}</h4>
+			<p class="flow-text">{{text}}</p>
+		</div><!--
+		<div class="modal-footer">
+			<a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+		</div>-->
+	</div>
+
 </template>
