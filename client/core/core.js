@@ -41,6 +41,8 @@ Template.dsonessay.rendered = addscrollbar;
 Template.fessay.rendered = addscrollbar;
 Template.infog.rendered = addscrollbar;
 Template.tproj.rendered = addscrollbar;
+Template.intro.rendered = addscrollbar;
+
 
 Template.menu.rendered = function() {
 	if (Session.get('menuview') == 'p1') {$('#menup2').hide();} else {$('#menup1').hide();}
@@ -62,6 +64,6 @@ Template.menu.events({
 Template.hintbox.events({
 	'click .hintbox': function() {
 		$("#hintbox-modal").openModal();
-		
+
 	}
 })
